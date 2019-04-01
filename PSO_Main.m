@@ -18,7 +18,7 @@ for i =(1:particles)
         rnum(j)=(rand()*2-1);
     end
     x(i,:)=(z);
-    y(i,:)=(fitness(x,i));
+    y(i)=(fitness(x,i));
     v(i,:)=(rnum);
     fitnesspbest(i,:)=(y(i));
 end
@@ -64,16 +64,16 @@ figure(2)
 plot(t,G,'b',t,aG,'r','Linewidth',1.5)
 ylabel('Fitness','Fontsize',10,'FontName','Times New Roman')
 xlabel('Iterations','Fontsize',10,'FontName','Times New Roman')
-legend(['Best Fitness','Average Fitness'])
+legend('Best Fitness','Average Fitness')
 axis([0,30,0,150])
 
-
-fprintf("x2=%f\n",gbest(1))
-fprintf("x3=%f\n",gbest(2))
-fprintf("x4=%f\n",gbest(3))
-fprintf("x5=%f\n",gbest(4))
-fprintf("x6=%f\n",gbest(5))
-fprintf("x7=%f\n",gbest(6))
-fprintf("x8=%f\n",gbest(7))
-fprintf("x9=%f\n",gbest(8))
-fprintf("x1=%f\n",gbest(9))
+fprintf("fitness=%f\n",fitnessgbest);
+fprintf("x1=%f\n",gbest(1))
+fprintf("x2=%f\n",gbest(2))
+fprintf("x3=%f\n",gbest(3))
+fprintf("x4=%f\n",gbest(4))
+fprintf("x5=%f\n",gbest(5))
+fprintf("x6=%f\n",gbest(6))
+fprintf("x7=%f\n",gbest(7))
+fprintf("x8=%f\n",gbest(8))
+fprintf("x9=%f\n",gbest(9))
