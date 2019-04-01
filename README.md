@@ -9,4 +9,4 @@ PSO_Main.m:
 particles=36   ;                        %Numbers of agent
 mult=9     ;                            %dimantion of function
 ```
-3.Modify the plot instructions if you need  
+3.Modify the plot instructions if you need.
